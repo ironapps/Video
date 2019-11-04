@@ -1,0 +1,312 @@
+.Video {
+  -webkit-tap-highlight-color:transparent;
+  
+}
+.Video {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+#volume-bar {
+  opacity:0; 
+  height: -1px;
+  width: -1px;
+}
+.Vol {
+display:none;
+}
+/*
+*/
+
+    #player {
+    	float:left;
+    	padding:1em 1em .5em;
+    	background-color:black;
+      border:2px:black;
+      border-radius: 9px;
+    }
+    
+    #controls {
+      border: 1px solid black;
+      width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 5px;
+      padding-bottom: 3px;
+      border-radius: 7px;
+    }
+    
+    video {
+    	border:1px solid red;
+    	width:420px;
+    	height:231px;
+    	background:black;
+    }
+
+
+    
+    progress {
+      color: red;
+      font-size: 12px;
+      width: 220px;
+      height: 16px;
+      border: none;
+      margin-right: 10px;
+      background: red;
+      border-radius: 9px;
+      vertical-align: middle;
+    }
+    progress::-moz-progress-bar { 
+      color:red;
+      background:gray; 
+    }
+    
+    progress[value]::-webkit-progress-bar {
+      background-color: red;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }
+    
+    progress[value]::-webkit-progress-value {
+      background-color: red;
+    }
+    
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      margin: 6.8px 0;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 4.4px;
+      cursor: pointer;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+      background: red;
+      border-radius: 1px;
+      border: 1.1px solid red;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: black;
+    }
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 4.4px;
+      cursor: pointer;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+      background: black;
+      border-radius: 1px;
+      border: 1.1px solid #18d501;
+    }
+    input[type=range]::-moz-range-thumb {
+      box-shadow: 2.6px 2.6px 3.7px #00aa00, 0px 0px 2.6px #00c300;
+      border: 2.5px solid #83e584;
+      height: 18px;
+      width: 9px;
+      border-radius: 3px;
+      background: black;
+      cursor: pointer;
+    }
+    input[type=range]::-ms-track {
+      width: 100%;
+      height: 4.4px;
+      cursor: pointer;
+      background: black;
+      border-color: transparent;
+      color: transparent;
+    }
+    input[type=range]::-ms-fill-lower {
+      background: black;
+      border: 1.1px solid #18d501;
+      border-radius: 2px;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+    }
+    input[type=range]::-ms-fill-upper {
+      background: black;
+      border: 1.1px solid black;
+      border-radius: 2px;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+    }
+    input[type=range]::-ms-thumb {
+      box-shadow: 2.6px 2.6px 3.7px #00aa00, 0px 0px 2.6px #00c300;
+      border: 2.5px black;
+      height: 18px;
+      width: 9px;
+      border-radius: 3px;
+      background: black;
+      cursor: pointer;
+      height: 4.4px;
+    }
+    input[type=range]:focus::-ms-fill-lower {
+      background: black;
+    }
+    input[type=range]:focus::-ms-fill-upper {
+      background: black;
+    }ground-color: black;
+    }
+    
+    
+    
+    #player {
+    	float:left;
+    	padding:1em 1em .5em;
+    	background-color:black;
+      border:2px black;
+      border-radius: 9px;
+    }
+    
+    #controls {
+      border: 1px: black;
+      width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 5px;
+      padding-bottom: 3px;
+      border-radius: 7px;
+    }
+    
+    video {
+    	border:1px solid black;
+    	width:420px;
+    	height:231px;
+    	background:black;
+    }
+    
+    
+    .play {
+      height: 5px;
+  width: 5px;
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #202020;
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.play {
+  
+  
+  border-color: red red red red;
+}
+.play {
+  height: 5px;
+  width: 5px;
+  
+  border-color: red red red red;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.play {
+  height: 5px;
+  width: 5px;
+  background-color:black;
+   height: 5px;
+  width: 5px;
+  background:red;
+ border-color: transparent transparent transparent #202020;
+   background-color:black;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.play {
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+  }
+
+      background-attachment: fixed;
+  width:5px;
+  height:15px;
+    
+    .stop { background-position:-38px 0; }
+.pause {
+  width:5px;
+  height:15px;
+  border-style: solid;
+  border-width: 37px;
+  border-color: #202020;
+  background-color:black;
+}
+.pause {
+  
+  border-style: double;
+  border-width: 0px 37px 0px 37px;
+  width:5px;
+  height:20px;
+  background-color:black;
+}
+.pause{
+  
+  border-width: 0px 0px 0px 37px;
+  border-color: #202020;
+  width:5px;
+  height:20px;
+  background-color:black;
+}
+    #volume-bar {
+	    width: 50px;
+      vertical-align: middle;
+      padding:0px;
+    }
+    .mute { background-position:-95px 0; }
+    position:-133px 0; }
+    .fullscreen {
+        text-indent: 0px;
+        color: black;
+        background-color: black;
+        background-image: none;
+        padding: 0px;
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+progress {
+      color: black;
+      font-size: 12px;
+      width: 220px;
+      height: 16px;
+      border: none;
+      margin-right: 10px;
+      background: #292828;
+      border-radius: 9px;
+      vertical-align: middle;
+    }
+    progress::-moz-progress-bar { 
+      color:black;
+      background:#292828; 
+    }
+    
+    progress[value]::-webkit-progress-bar {
+      background-color: #292828;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }
+    
+    progress[value]::-webkit-
+    
+    
