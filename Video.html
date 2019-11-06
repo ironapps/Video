@@ -1,0 +1,474 @@
+
+<style>
+  video {
+ 
+ float:left;
+ width:336px;
+ 
+    	
+    	
+  
+    	
+    }
+.pause {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+}
+.play {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+}
+button:focus {
+  outline:none;
+  box-shadow: none;
+  
+}
+
+
+
+  
+.Video {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+#volume-bar {
+  opacity:0; 
+  height: -1px;
+  width: -1px;
+}
+.Vol {
+display:none;
+}
+/*
+*/
+
+    #controls{
+     
+     position:absolute;
+     
+ }
+#VideoPlayer{
+    
+	position: relative;
+    bottom: 178px;
+}
+    
+    
+    
+    
+
+
+    #controls {
+      background: black;
+      width: 335px;
+      
+      margin-left: auto;
+      margin-right: auto;
+      
+      border-radius: 6px;
+      
+      
+    }
+    
+   
+    
+    progress[value]::-webkit-progress-bar {
+      background-color: red;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }
+    
+    progress[value]::-webkit-progress-value {
+      background-color: red;
+    }
+    
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      margin: 6.8px 0;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 4.4px;
+      cursor: pointer;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+      background: red;
+      border-radius: 1px;
+      border: 1.1px solid red;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: black;
+    }
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 4.4px;
+      cursor: pointer;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+      background: black;
+      border-radius: 1px;
+      border: 1.1px solid #18d501;
+    }
+    input[type=range]::-moz-range-thumb {
+      box-shadow: 2.6px 2.6px 3.7px #00aa00, 0px 0px 2.6px #00c300;
+      border: 2.5px solid #83e584;
+      height: 18px;
+      width: 9px;
+      border-radius: 3px;
+      background: black;
+      cursor: pointer;
+    }
+    input[type=range]::-ms-track {
+      width: 100%;
+      height: 4.4px;
+      cursor: pointer;
+      background: black;
+      border-color: transparent;
+      color: transparent;
+    }
+    input[type=range]::-ms-fill-lower {
+      background: black;
+      border: 1.1px solid #18d501;
+      border-radius: 2px;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+    }
+    input[type=range]::-ms-fill-upper {
+      background: black;
+      border: 1.1px solid black;
+      border-radius: 2px;
+      box-shadow: 0.9px 0.9px 1.7px #002200, 0px 0px 0.9px #003c00;
+    }
+    input[type=range]::-ms-thumb {
+      box-shadow: 2.6px 2.6px 3.7px #00aa00, 0px 0px 2.6px #00c300;
+      border: 2.5px black;
+      height: 18px;
+      width: 9px;
+      border-radius: 3px;
+      background: black;
+      cursor: pointer;
+      height: 4.4px;
+    }
+    input[type=range]:focus::-ms-fill-lower {
+      background: black;
+    }
+    input[type=range]:focus::-ms-fill-upper {
+      background: black;
+    }ground-color: black;
+    }
+    
+    
+    
+    
+    
+     {
+display:none;
+}
+    
+    
+    
+    
+    .play {
+      height: 5px;
+  width: 5px;
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #202020;
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.play {
+  
+  
+  border-color: red red red red;
+}
+.play {
+  height: 5px;
+  width: 5px;
+  
+  border-color: red red red red;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.play {
+  height: 5px;
+  width: 5px;
+  background-color:black;
+   height: 5px;
+  width: 5px;
+  background:red;
+ border-color: transparent transparent transparent #202020;
+   background-color:black;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.play {
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+  }
+
+      background-attachment: fixed;
+  width:5px;
+  height:15px;
+    
+    .stop { background-position:-38px 0; }
+.pause {
+  width:5px;
+  height:15px;
+  border-style: solid;
+  border-width: 37px;
+  border-color: #202020;
+  background-color:black;
+}
+.pause {
+  
+  border-style: double;
+  border-width: 0px 37px 0px 37px;
+  width:5px;
+  height:20px;
+  background-color:black;
+}
+.pause{
+  
+  border-width: 0px 0px 0px 37px;
+  border-color: #202020;
+  width:5px;
+  height:20px;
+  background-color:black;
+}
+    
+    position:-133px 0; }
+    .fullscreen {
+        text-indent: 0px;
+        color: black;
+        background-color: black;
+        background-image: none;
+        padding: 0px;
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+progress {
+      color: black;
+      font-size: 12px;
+      width: 220px;
+      height: 16px;
+      border: none;
+      margin-right: 10px;
+      background: #292828;
+      border-radius: 9px;
+      vertical-align: middle;
+    }
+    progress::-moz-progress-bar { 
+      color:black;
+      background:#292828; 
+    }
+    
+    progress[value]::-webkit-progress-bar {
+      background-color: #292828;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }
+    
+    progress[value]::-webkit-
+    
+    
+</style>
+<h1> code </h1>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ironapps.github.io/Video/Skin.js"></script>
+<main id="canvas-wrap"> <canvas width="800" height="600"> </canvas><div id="" 'video'=""><div id="player">
+  <wrapper =
+           <main> id="wrapper">
+  
+  </main> <div id="controls"><progress id="progress-bar" min="0" max="100" value="0">0% played</progress><button id="btnPlayPause" class="play" accesskey="P" onclick="playPauseVideo();"></button><input type="range" id="volume-bar" title="" min="1" max="1" step="0.1" value="1" onclick="video();"><button id="btnFullScreen" class="Vol" title="toggle full screen" accesskey="T" onclick="toggleFullScreen();" disabled="">[&nbsp;&nbsp;]</button></div></div></div></main><script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<main id= "FixBug">
+    <main id="VideoPlayer">
+  <video id="video-element" oncontextmenu="return false;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;"><source src="https://github.com/ironapps/Video/blob/master/Ad.mp4?raw=true" type="video/mp4"></video>
+    </main> 
+      <Script>
+  // Get a handle to the player
+	player       = document.getElementById('video-element');
+	btnPlayPause = document.getElementById('btnPlayPause');
+	btnMute      = document.getElementById('btnMute');
+	progressBar  = document.getElementById('progress-bar');
+  volumeBar    = document.getElementById('volume-bar');
+
+  // Update the video volume
+  volumeBar.addEventListener("change", function(evt) {
+		player.volume = evt.target.value;
+	});
+  document.getElementById('btnFullScreen').disabled = true;
+	// Add a listener for the timeupdate event so we can update the progress bar
+	player.addEventListener('timeupdate', updateProgressBar, false);
+	
+	// Add a listener for the play and pause events so the buttons state can be updated
+	player.addEventListener('play', function() {
+		// Change the button to be a pause button
+		changeButtonType(btnPlayPause, 'pause');
+	}, false);
+  
+	player.addEventListener('pause', function() {
+		// Change the button to be a play button
+		changeButtonType(btnPlayPause, 'play');
+	}, false);
+	
+	player.addEventListener('volumechange', function(e) { 
+		// Update the button to be mute/unmute
+		if (player.muted) changeButtonType(btnMute, 'unmute');
+		else changeButtonType(btnMute, 'mute');
+	}, false);	
+  
+	player.addEventListener('ended', function() { this.pause(); }, false);	
+  
+  progressBar.addEventListener("click", seek);
+
+  function seek(e) {
+      var percent = e.offsetX / this.offsetWidth;
+      player.currentTime = percent * player.duration;
+      e.target.value = Math.floor(percent / 100);
+      e.target.innerHTML = progressBar.value + '% played';
+  }
+
+  function playPauseVideo() {
+  	if (player.paused || player.ended) {
+  		// Change the button to a pause button
+  		changeButtonType(btnPlayPause, 'pause');
+  		player.play();
+  	}
+  	else {
+  		// Change the button to a play button
+  		changeButtonType(btnPlayPause, 'play');
+  		player.pause();
+  	}
+  }
+  
+  // Stop the current media from playing, and return it to the start position
+  function stopVideo() {
+  	player.pause();
+  	if (player.currentTime) player.currentTime = 0;
+  }
+  
+  // Toggles the media player's mute and unmute status
+  function muteVolume() {
+  	if (player.muted) {
+  		// Change the button to a mute button
+  		changeButtonType(btnMute, 'mute');
+  		player.muted = false;
+  	}
+  	else {
+  		// Change the button to an unmute button
+  		changeButtonType(btnMute, 'unmute');
+  		player.muted = true;
+  	}
+  }
+  
+  // Replays the media currently loaded in the player
+  function replayVideo() {
+  	resetPlayer();
+  	player.play();
+  }
+  
+  // Update the progress bar
+  function updateProgressBar() {
+  	// Work out how much of the media has played via the duration and currentTime parameters
+  	var percentage = Math.floor((100 / player.duration) * player.currentTime);
+  	// Update the progress bar's value
+  	progressBar.value = percentage;
+  	// Update the progress bar's text (for browsers that don't support the progress element)
+  	progressBar.innerHTML = percentage + '% played';
+  }
+  
+  // Updates a button's title, innerHTML and CSS class
+  function changeButtonType(btn, value) {
+  	btn.title     = value;
+  	btn.innerHTML = value;
+  	btn.className = value;
+  }
+  
+  function resetPlayer() {
+  	progressBar.value = 0;
+  	// Move the media back to the start
+  	player.currentTime = 0;
+  	// Set the play/pause button to 'play'
+  	changeButtonType(btnPlayPause, 'play');
+  }  
+  
+  function exitFullScreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    }
+  }
+  
+  function toggleFullScreen() {
+    //var player = document.getElementById("player");
+
+    if (player.requestFullscreen)
+        if (document.fullScreenElement) {
+            document.cancelFullScreen();
+        } else {
+            player.requestFullscreen();
+        }
+        else if (player.msRequestFullscreen)
+        if (document.msFullscreenElement) {
+            document.msExitFullscreen();
+        } else {
+            player.msRequestFullscreen();
+        }
+        else if (player.mozRequestFullScreen)
+        if (document.mozFullScreenElement) {
+            document.mozCancelFullScreen();
+        } else {
+            player.mozRequestFullScreen();
+        }
+        else if (player.webkitRequestFullscreen)
+        if (document.webkitFullscreenElement) {
+            document.webkitCancelFullScreen();
+        } else {
+            player.webkitRequestFullscreen();
+        }
+    else {
+        alert("Fullscreen API is not supported");
+        
+    }
+  }
+  </script>
