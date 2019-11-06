@@ -1,3 +1,6 @@
 #Gui {
   cursor: url('https://ironapps.github.io/Video/IronPlayerCurser.png'), auto;	
 }
+button:focus{
+ outline:none !important;
+ }
